@@ -1,0 +1,280 @@
+/* ============================================================
+CSS RESET
+============================================================ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ============================================================
+END CSS RESET
+============================================================ */
+
+/* ============================================================
+SMOOTH SCROLL (WHEN YOU CLICK "BACK TO TOP" LINK/BUTTON)
+============================================================ */
+html {
+	scroll-behavior: smooth;
+}
+/* ============================================================
+END SMOOTH SCROLL
+============================================================ */
+
+/* ============================================================
+GRID
+============================================================  */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container,
+.grid {
+	margin: 0 auto;
+	width: 960px;
+}
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* ============================================================
+END GRID
+============================================================  */
+
+/* ============================================================
+TYPOGRAPHY
+============================================================  */
+h1, h3, h4, h5, p {
+	margin-bottom: 25px;
+}
+/* ============================================================
+END TYPOGRAPHY
+============================================================  */
+
+/* ============================================================
+LEADS
+============================================================  */
+.lead {text-align: center;}
+.lead p {
+	font-size: 25px;
+	line-height: 30px;
+}
+/* ============================================================
+END LEADS
+============================================================  */
+
+/* ============================================================
+BUTTONS
+============================================================  */
+.btn {
+	color: #F8F8FF;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 17px 3px;
+	margin: 0;
+}
+
+.btn-alt {
+	border: 1.5px solid #C3C0AD;
+	padding: 10px 30px;
+}
+/* ============================================================
+END BUTTONS
+============================================================  */
+
+/* ============================================================
+CLEARFIX
+============================================================  */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	clear: both;
+	*zoom: 1;
+}
+/* ============================================================
+END CLEARFIX
+============================================================  */
+
+/* ============================================================
+ROWS
+============================================================  */
+.row,
+.row-alt {
+	min-width: 360px;
+}
+
+.row {
+	background: $brand-whiteish;
+	padding: 55px 0 45px 0;
+}
+
+.row-alt {
+	background: #d2ff52;
+	background: -webkit-linear-gradient(to right, #d2ff52, #2cb457);
+	background: -moz-linear-gradient(to right, #d2ff52, #2cb457);
+	background: -o-linear-gradient(to right, #d2ff52, #2cb457);
+	background: linear-gradient(to right, #d2ff52, #2cb457);
+	padding: 45px 0 20px 0;
+}
+/* ============================================================
+END ROWS
+============================================================  */
+
+/* ============================================================
+CUSTOM STYLING
+============================================================  */
+body {
+	background: #2F404F;
+	color: #808080;
+	font: 200 15px/22.5px "Lato", "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {color: #2CB457;}
+
+h1 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+h2 {
+	font-size: 25px;
+	line-height: 40px;
+}
+
+h3 {font-size: 21px;}
+
+h4 {font-size: 18px;}
+
+h5 {
+	color: #FF6417;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+strong {font-weight: 400;}
+
+cite, em {
+	font-style: italic;
+}
+/* ============================================================
+END CUSTOM STYLING
+============================================================  */
+
+/* ============================================================
+LINKS STYLING
+============================================================  */
+a {
+	color: $brand-whiteish;
+	text-decoration: none;
+}
+
+a:hover {color: #00C3E3;}
+
+p a {
+	border-bottom: 1px solid #808080;
+}
+
+/* Since Menu/Teaser <h3> and <h5> elems are wrapped by anchor elems, this fixes the hover */
+.teaser a:hover h3 {color: #00C3E3;}
+
+/* Home Page Image Styling */
+.teaser img {
+	display: block;
+	margin-bottom: 25px;
+	border-radius: 17px 3px;
+	max-width: 100%;
+}
+/* ============================================================
+END LINKS STYLING
+============================================================  */
+
+/* ============================================================
+NAV
+============================================================  */
+.navi {text-align: right;}
+
+.navi li {
+	display: inline-block;
+	margin: 0 25px;
+	vertical-align: top;
+}
+
+.navi li {margin-right: 0;}
+/* ============================================================
+END NAV
+============================================================  */

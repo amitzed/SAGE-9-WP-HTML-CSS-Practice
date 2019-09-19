@@ -1,0 +1,199 @@
+/* ============================================================
+HOME PAGE
+============================================================  */
+.hero {
+	color: #F8F8FF;
+	line-height: 45px;
+	padding: 25px 80px 66px 80px;
+	text-align: center;
+}
+
+.hero h2 {font-size: 35px;}
+
+.hero p {
+	font-size: 24px;
+	font-weight: 100;
+}
+/* ============================================================
+END HOME PAGE
+============================================================  */
+
+/* ============================================================
+ROBOTS - robots.html
+============================================================  */
+.robot {margin-bottom: 45px;}
+
+.robot-info {
+	border: 1px solid #D3D3D3;
+	border-radius: 17px 3px;
+	margin-top: 85px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.robot-info img {
+	border-radius: 50%;
+	border-radius: 17px 3px;
+	height: 140px;
+	margin: -65px 0 17px 0;
+	vertical-align: top;
+}
+/* ============================================================
+END ROBOTS
+============================================================  */
+
+/* ============================================================
+SCHEDULE - schedule.html
+============================================================  */
+table {
+	margin-bottom: 45px;
+	width: 100%;
+}
+
+table:last-child {
+	margin-bottom: 0;
+}
+
+th,
+td {
+	padding: 0 30px 25px 0;
+	vertical-align: top;
+}
+
+th {
+	text-align: right;
+	padding-right: 45px;
+	width: 20%;
+}
+
+td { width: 40%; }
+
+thead {
+	font-weight: bold;
+	line-height: 40px;
+}
+
+thead th {
+	color: #00C3E3;
+	font-size: 25px;
+}
+
+tbody th {
+	color: #648880;
+	font-size: 15px;
+	font-weight: 400;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+tbody td {
+	border-top: .12em solid #D3D3D3;
+	padding-top: 20px;
+}
+
+tbody td:first-of-type { padding-right: 15px; }
+
+tbody td:last-of-type { padding-left: 15px; }
+
+tbody td:only-of-type {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+table a {
+	color: #808080;
+	font-weight: 300;
+}
+
+table h3 {
+	margin-bottom: 0;
+}
+
+.offset-schedule { color: #FF6417; }
+/* ============================================================
+END SCHEDULE
+============================================================  */
+
+/* ============================================================
+VENUE - venue.html
+============================================================  */
+.venue-moscone { margin-bottom: 65px; }
+
+.venue-florence { margin-bottom: 20px; }
+
+.venue-map { height: 265px; }
+/* ============================================================
+END VENUE
+============================================================  */
+
+/* ============================================================
+REGISTRATION
+============================================================  */
+.reasons-to-attend {
+	list-style: square;
+	margin: 0 0 20px 30px;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+	/* font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica Arial, sans-serif; */
+	font: 200 15px/22.5px "Lato", "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.register-group label {
+	color: #3973AC;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.register-group input,
+.register-group select,
+.register-group textarea {
+	color: #808080;
+	border: 1px solid #2CB457;
+	border-radius: 5px;
+	display: block;
+	margin: 5px 0 25px 0;
+	padding: 5px 10px;
+}
+
+.register-group input,
+.register-group textarea {
+	width: 100%;
+}
+
+/* .register-group select {
+	float: right;
+} */
+
+.register-group select {
+	float: right;
+	height: 30px;
+	width: 60px;
+}
+
+.register-group textarea {
+	height: 80px;
+}
+
+.btn-default {
+	font-size: 15px;
+	transition: -webkit-letter-spacing 1s ease;
+	transition: -moz-letter-spacing 1s ease;
+	transition: -o-letter-spacing 1s ease;
+	transition: letter-spacing 1s ease;
+}
+.btn-default:hover {
+	background: rgba(255, 100, 23, .8);
+	color: yellow;
+	font-size: 16px;
+	letter-spacing: 10px;
+}
+/* ============================================================
+END REGISTRATION
+============================================================  */
